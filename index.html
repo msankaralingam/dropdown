@@ -1,0 +1,46 @@
+<!DocType html>
+<html>
+	<head>
+		
+		<title>Dropdown</title>
+		 <link href="css/style.css" rel="stylesheet">	
+		
+	
+	</head>
+	
+	<body>
+	<section>
+		<div>
+			<p id="dd">Dropdown <i id="icon" class="fa fa-sort-desc"></i> <i id="icon1" class="fa fa-sort-asc"></i> </p>
+			<ul id="list" class="hide">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+			</ul>
+		</div>
+	
+	</section>
+	
+	<script>
+		var dd=document.getElementById("dd");
+		var list=document.getElementById("list");
+		var icon=document.getElementById("icon");
+		var icon1=document.getElementById("icon1");
+		
+		icon1.classList.add("hide2");
+		dd.addEventListener("click",function(){
+			list.classList.toggle("hide");
+			icon.classList.toggle("hide1");
+			icon1.classList.toggle("hide2");
+		});
+		
+		list.addEventListener("click",function(){
+			list.classList.toggle("hide"); 
+			icon.classList.toggle("hide1");
+			icon1.classList.toggle("hide2");
+		});
+			
+	</script>
+	</body>
+</html>
